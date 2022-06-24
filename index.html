@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft - Cloud, Computers, Apps & Gaming</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.90cdaf48.ico">
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/index.c84919a4.css">
+</head>
+
+<body>
+    <header id="top">
+        <nav class="mx-4 my-4 flex justify-between lg:px-14 items-center">
+            <div class="flex items-center space-x-4 md:hidden">
+                <div id="menu" class="text-xl">
+                    <span id="open"><i class="fa-solid fa-bars"></i></span>
+                    <span id="close" class="hidden"><i class="fa-solid fa-xmark"></i></span>
+
+                </div>
+
+
+
+                <div class="search">
+                    <span class="material-symbols-outlined rotate-90"> search </span>
+                </div>
+            </div>
+            <div class="md:flex md:items-center  space-x-4 md:text-xs">
+                <div class="microsoft md:order-1 cursor-pointer">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAAAuCAYAAABK69fpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTAwQkM2Mzk4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTAwQkM2Mzg4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMkM5MzFBNDcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMkM5MzFBNTcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgQJy/MAAAxESURBVHja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" class="w-28" alt="" />
+                </div>
+                <ul class="hidden md:flex list-none space-x-3 md:order-2">
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Microsoft 365</li>
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Office</li>
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Windows</li>
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Surface</li>
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Xbox</li>
+                    <li class="hover:underline hover:underline-offset-8 cursor-pointer">Support</li>
+                </ul>
+            </div>
+            <div class="flex items-center space-x-4 md:order-3">
+                <div class="all-microsoft hidden md:block hover:underline hover:underline-offset-8 cursor-pointer">
+                    All Microsoft
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="search rotate-90 hidden md:block cursor-pointer">
+                    <span class="material-symbols-outlined"> search </span>
+                </div>
+                <div class="cart cursor-pointer">
+                    <img src="/assets/cart-icon (2).aeb3f65f.png" class="w-8" alt="" />
+                </div>
+                <div class="account cursor-pointer">
+                    <img src="/assets/account.a80597fb.png" class="w-8 border border-black p-1 rounded-3xl" alt="" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- On click hamburger -->
+        <div class="hamburger-items hidden bg-[#f2f2f2] focus:border-dotted border-2 active:border-dotted active:border-2"
+            id="hmbrgItem">
+            <ul class="md:flex list-none space-x-3 md:order-2 space-y-8 text-xl ">
+                <li class="ml-3 p-2  hover:underline hover:underline-offset-8 cursor-pointer border-b">Microsoft 365
+                </li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer border-b">Office</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer border-b">Windows</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer  border-b">Surface</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer border-b">Xbox</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer border-b">Support</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer border-b">PC & Devices</li>
+                <li class=" p-2 hover:underline hover:underline-offset-8 cursor-pointer  border-b">Entertainment</li>
+                <li class="hover:underline hover:underline-offset-8 cursor-pointer border-b">Business</li>
+                <li class="hover:underline hover:underline-offset-8 cursor-pointer border-b">Developer & IT</li>
+                <li class="hover:underline hover:underline-offset-8 cursor-pointer border-b">Other</li>
+                <li class="hover:underline hover:underline-offset-8 cursor-pointer border-b">View Sitemap</li>
+            </ul>
+        </div>
+
+
+        <div class="section-1 flex flex-col-reverse md:flex-col lg:flex-row border-b-2 lg:bg-[#f2f2f2]">
+            <div class="left lg:w-[30vw]  lg:py-24 lg:ml-32">
+                <div class="mx-4 py-14">
+                    <h1 class="text-3xl font-medium py-5">Microsoft 365</h1>
+                    <p>
+                        Premium Office apps, extra cloud storage, advanced security, and
+                        more - all in one convenient subscription
+                    </p>
+                    <div class="buttons my-6 space-x-6">
+                        <button class="px-3 py-1 text-white bg-[#0067b8] hover:bg-[hsl(206,57%,35%)] ">
+                            Free upto 6 people
+                        </button>
+                        <button class="text-[#0067b8] font-medium hover:underline">For 1 person
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right bg-[#f2f2f2]" id="right">
+                <img src="/assets/laptop-1.214e5394.jpeg" class="w-full" alt="" />
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="pagination flex justify-center text-3xl space-x-6 mt-8 mb-14">
+                <i class="fa-solid fa-angle-left hover:-translate-x-2 transition-all cursor-pointer"></i>
+                <div class="flex space-x-3 justify-center items-center">
+                    <i class="fa-solid fa-circle text-xs"></i>
+                    <i class="fa-regular fa-circle text-xs"></i>
+                </div>
+                <i class="fa-solid fa-angle-right hover:translate-x-2 transition-all cursor-pointer"></i>
+            </div>
+            <div class="items sm:grid sm:grid-cols-2 lg:flex justify-center lg:space-x-12">
+                <div class="card flex flex-col items-center mt-6 cursor-pointer">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABrAAEBAQEAAAAAAAAAAAAAAAAHBQQIEAAAAwUEBwgDAQAAAAAAAAAAAQUCBBESEwYUFVEWGDZVdJOxISgxSGaGo8MnRmKRAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlW0y6ss2hUGWVR7IieG4FVPMBOx5a3q+c0wDriqlqV3q/vNfSeWpUOaEnhHIAFY8tb1fOaYCjZldWWrQp7LSo9mRvDESqnmAnWp2jUeIb6gJoB78kPun6wAIApWW2jTuIY6gHZc1X8YfL1ptXrNVJZITR7YAMXdY9c/GAVvwVqyftGimO/wAXm8Sf5LAAU91j1z8YDah6r+MOl102r1mac0kJo9kQATanaNR4hvqAmgHvyQ+6frAAgClZbaNO4hjqAo2mQllq0Kg0ylvZkbw3A6R5gJ2ArW6nzlGAdcKUtSu63B5r6TzU6ZzQk8YZAArAVrdT5yjAUbMoSyzaFPaaS3siJ4YidI8wH//Z" class="w-10" alt="" />
+                    <span class="text-[#0067b8] font-medium underline"><a href="">Choose your Microsoft 365</a></span>
+                </div>
+                <div class="card flex flex-col items-center cursor-pointer">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xAB0AAABBAMBAAAAAAAAAAAAAAABAwQGBwIFCAAQAAAFAwEECAENAAAAAAAAAAECAwQFAAYRBxITITEIFBVBUWGBkSIWGCQ0NUJiY3GCobHBAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDssRAOdBiJyBzOX3oAKyQc1SB+4KBBaRYIhlV4gQPxHAKAsJBi/A4snaDgCDg27OBsD54oKs1qcyU5fdpaexMu/jCyBlnkisyV3apW6QFDAG7sib+KBYNDYE4fS7pvJ147yXNx9goCGgOnxhy4TmHQ/nSShv8AaBYmgelJeJ7WRWHxVUMf+xoI90f7ehmGpt/PrcYpR8Q2cIxqCKPAhjpAYVDY8cnAPSg2VgF+UfSBvK5R+JvDoIw7U3dtBtGVx67IUFvUHqDWXXKoQVtSMw5HCLNsdY4+RQzQUr0P5132E/t+fblbTDlTtpMc/WUHHED/AKgJcD6UDHSa4rw0+t92wuDTC5nck6frPHjpkkVVNQ5x+6OciGACgl4a6MEftCxL3aY5iaKEQD2GgHziNPEuD3ttiPf1iNOXFBBte9a7LuzTR1bNoSysjKSyqbTq6CBt7uzD8YgXv4cMedAned9W/HvbUnbYhrhby0GYrQzVWLUILlobAHTzyyGyAhQdNUAEhR5lAfSgwMgiYMGSTEPMoUDYImMByVyDBsCxeJVN2G0HrQOxTTHmQvtQf//Z" class="py-3" alt="" />
+                    <span class="text-[#0067b8] font-medium underline"><a href="">Explore surface devices</a></span>
+                </div>
+                <div class="card flex flex-col items-center cursor-pointer">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABxAAEAAwEAAAAAAAAAAAAAAAAIBQYHCRAAAQMCAwUEBwgDAAAAAAAAAQIDBAUGAAcRCBIhIjETFEFRFhcjMkJhgRUlUmJxgrHRGDORAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwBXXxd9u2VRVVi5qozT4QUEdo4eqj0AHUnAUS9qbW807aE7LzNAUuC6n2a4TIWFnyUsKBGANvqJ2jPTPuPpVJ7t7/2n39fZ6a+XXX5YBJWTTa1lZbZnZh5oCqQWke0XOZCNw+SVlRJwF7se77dvWiprFs1NmoQioo7Rs9FDqCPA4AC7cOYUq6s15NvMSFGlUMlhDYPKp341fwPpgJ3YDh35Iv16RR5jke2mE/eSXAVNOE+6lI/H14+GAfOo101GvlgANt+Q78j36zIrExyRbL6fu1LYKWmiPeSofj6cfHAQWw9mFKtXNeNbz8hQpVcIYW2Typd+BX8j64DOb1otVuLO6rUSIyt6ozaw4yhHiVFemAdb1TtDZmySiQ3yh2aG+RlBAcmyCBvH5Dpx8BpgBx/kRmP6zvTf7WXv7273HU937LX/AF7vl8+uAY7FTs/aZySlw2ShqYW+dlRBchSAOU/MdePiNcAFLLotVt3O6k0OWypmowqw2ytHiFBemAZCMs4Nm7TlezLqbG7Qm6a5UmnSnlbf+P6gcf3YAc56ZkVXM2/JddnuLTFCi3Cjk8rLQPAfr5nAULAX3IvMiq5ZX5ErsBxaopUG5sfXleaJ4j9fI4BjOZZwby2nKDmXTGN6hOU1upOuhPK498H1I4/twG/XlQIV02vUreqO+ItQjqYdKDooJUNOBwHP/NnZWzBtWc/It6Kq4qVqS2uOPbJH5kf1rgMn9XV9947v6JVjtddN3uqtdf8AmA1jKbZWzBuqcxIuGKq3aVqC4uQPbKH5Uf3pgOgFm0CFa1r023qdvmLT46WGis6qKUjTicB//9k=" class="py-3" alt="" />
+                    <span class="text-[#0067b8] font-medium underline"><a href="">Buy Xbox games</a></span>
+                </div>
+                <div class="card flex flex-col items-center cursor-pointer">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABrAAEBAQEAAAAAAAAAAAAAAAAHBQQIEAAAAwUEBwgDAQAAAAAAAAAAAQUCBBESEwYUFVEWGDZVdJOxISgxSGaGo8MnRmKRAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlW0y6ss2hUGWVR7IieG4FVPMBOx5a3q+c0wDriqlqV3q/vNfSeWpUOaEnhHIAFY8tb1fOaYCjZldWWrQp7LSo9mRvDESqnmAnWp2jUeIb6gJoB78kPun6wAIApWW2jTuIY6gHZc1X8YfL1ptXrNVJZITR7YAMXdY9c/GAVvwVqyftGimO/wAXm8Sf5LAAU91j1z8YDah6r+MOl102r1mac0kJo9kQATanaNR4hvqAmgHvyQ+6frAAgClZbaNO4hjqAo2mQllq0Kg0ylvZkbw3A6R5gJ2ArW6nzlGAdcKUtSu63B5r6TzU6ZzQk8YZAArAVrdT5yjAUbMoSyzaFPaaS3siJ4YidI8wH//Z" class="py-3" alt="" />
+                    <span class="text-[#0067b8] font-medium underline"><a href="">Get Windows 11</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="section-3 mx-3 my-6 py-6 lg:px-12  lg:flex xl:justify-center lg:space-x-5">
+            <div class="card mt-6 lg:w-72 lg:mt-11">
+                <img src="/assets/Content-Card-AEM-PC-Game-Pass-Expansion-No-Logo.2e7a72c9.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">
+                    Get your first three months for ₹50
+                </h2>
+                <p>
+                    Unlock hundreds of great games and more for just ₹50 when you join
+                    Xbox Game Pass Ultimate or PC Game Pass. Offer available to new
+                    subscribers only.
+                </p>
+                <div class="pagination sm:space-x-14 md:space-x-0 lg:flex lg:flex-col items-start">
+                    <button class="text-[#0067b8] font-bold my-3 hover:underline">
+                        Join PC Game Pass <i
+                            class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i>
+                    </button>
+                    <button class="text-[#0067b8] font-bold my-3 hover:underline">
+                        Join Game Pass Ultimate <i
+                            class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card mt-6 lg:w-72 lg:mt-11 cursor-pointer">
+                <img src="/assets/Gldn-mscom-01-Black-Platinum-CP01.131557fa.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">Surface Laptop 4</h2>
+                <p>
+                    Unlock hundreds of great games and more for just ₹50 when you join
+                    Xbox Game Pass Ultimate or PC Game Pass. Offer available to new
+                    subscribers only.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3 hover:underline">Shop now <i
+                            class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i></button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:w-72 cursor-pointer">
+                <img src="/assets/CP-02-Pro8-Platinum-BnrCntrl.cb9a5d99.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">Surface Pro 8</h2>
+                <p>
+                    Do more with a larger 13-inch touchscreen, faster connections and
+                    extra speed. Now available with Windows 11.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3 hover:underline">Learn more <i
+                            class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i></button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:w-72 cursor-pointer">
+                <img src="/assets/gldn-CP-Windows11-GlobalLaunch.1abe446d.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">
+                    Designed for life today - and tomorrow
+                </h2>
+                <p>
+                    The next-generation of games. Your goals. Friends and family.
+                    Windows 11 was made to bring you closer to everything you love.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3 hover:underline">
+                        See if your PC is ready <i
+                            class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:hidden cursor-pointer">
+                <img src="/assets/gldn-MSFT-hero-Edge_VP1-539x440.bf3284c9.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">Microsoft Edge</h2>
+                <p>
+                    World-class performance with more privacy, more productivity and
+                    more value while you browse
+                </p>
+                <div class="pagination my-4">
+                    <button class="px-3 py-1 text-white bg-[#0067b8]">
+                        Download now
+                    </button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:hidden">
+                <img src="/assets/Content-Card-Surface-Laptop-Go-2-03-M01.d6ea7dde.jpeg" alt="" />
+                <button class="px-3 py-1 mt-3 font-medium bg-[#ffb900]">New</button>
+                <h2 class="text-xl mt-2 mb-4 font-medium">
+                    Surface Laptop Go 2 for Business
+                </h2>
+                <p>
+                    A sleek, portable laptop featuring a great typing experience,
+                    Windows 11 Pro and professional-grade performance.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3">Learn <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:hidden">
+                <img src="/assets/gldn-CP-Microsoft-Teams-Commercial.c689deef.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">Get Microsoft Teams for free</h2>
+                <p>
+                    Online meetings, chat and shared cloud storage - all in one place.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3">
+                        Sign up for free <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:hidden">
+                <img src="/assets/JIC-DPS-CP01.6a44bb01.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">
+                    Welcome to your Windows 365 Cloud PC
+                </h2>
+                <p>
+                    Securely stream your Windows experience from the Microsoft cloud to
+                    any device.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3">
+                        Get it today <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card mt-11 lg:hidden">
+                <img src="/assets/Content-Card-Windows-11-Business.d77d48b9.jpeg" alt="" />
+                <h2 class="text-xl my-4 font-medium">
+                    Windows 11 for business is here
+                </h2>
+                <p>
+                    Designed for hybrid work. Powerful for employees. Consistent for IT.
+                    Secure for all.
+                </p>
+                <div class="pagination space-x-14">
+                    <button class="text-[#0067b8] font-bold my-3">Learn more <i
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="section-4 hidden lg:block bg-[url('./img/ms-edge.jpeg')] h-[48rem] bg-no-repeat mx-3 bg-center border ">
+            <div class="bg-white border px-16 py-16 w-96  mx-20 my-64">
+                <h2 class="text-2xl font-bold my-4">Microsoft Edge</h2>
+                <p>World-class performance with more privacy, more productivity and more value while you browse
+                </p>
+                <button class="px-3 py-1 my-6 text-white bg-[#0067b8] hover:bg-[hsl(206,57%,35%)] ">
+                    Download now
+                </button>
+            </div>
+        </div>
+        <div class="section-5 hidden lg:block ">
+
+
+            <div class="mx-3 px-12 xl: lg:flex lg:space-x-5 xl:justify-center">
+                <div class="card mt-11 lg:hidden">
+                    <img src="/assets/gldn-MSFT-hero-Edge_VP1-539x440.bf3284c9.jpeg" alt="" />
+                    <h2 class="text-xl my-4 font-medium">Microsoft Edge</h2>
+                    <p>
+                        World-class performance with more privacy, more productivity and
+                        more value while you browse
+                    </p>
+                    <div class="pagination my-4">
+                        <button class="px-3 py-1 text-white bg-[#0067b8]">
+                            Download now
+                        </button>
+                    </div>
+                </div>
+                <div class="card mt-11  lg:w-72 cursor-pointer">
+                    <img src="/assets/Content-Card-Surface-Laptop-Go-2-03-M01.d6ea7dde.jpeg" alt="" />
+                    <button class="px-3 py-1 mt-3 font-medium bg-[#ffb900]">New</button>
+                    <h2 class="text-xl mt-2 mb-4 font-medium">
+                        Surface Laptop Go 2 for Business
+                    </h2>
+                    <p>
+                        A sleek, portable laptop featuring a great typing experience,
+                        Windows 11 Pro and professional-grade performance.
+                    </p>
+                    <div class="pagination space-x-14">
+                        <button class="text-[#0067b8] font-bold my-3 hover:underline">Learn <i
+                                class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i></button>
+                    </div>
+                </div>
+                <div class="card mt-11 lg:w-72 cursor-pointer">
+                    <img src="/assets/gldn-CP-Microsoft-Teams-Commercial.c689deef.jpeg" alt="" />
+                    <h2 class="text-xl my-4 font-medium">Get Microsoft Teams for free</h2>
+                    <p>
+                        Online meetings, chat and shared cloud storage - all in one place.
+                    </p>
+                    <div class="pagination space-x-14">
+                        <button class="text-[#0067b8] font-bold my-3 hover:underline">
+                            Sign up for free <i
+                                class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card mt-11 lg:w-72 cursor-pointer ">
+                    <img src="/assets/JIC-DPS-CP01.6a44bb01.jpeg" alt="" />
+                    <h2 class="text-xl my-4 font-medium">
+                        Welcome to your Windows 365 Cloud PC
+                    </h2>
+                    <p>
+                        Securely stream your Windows experience from the Microsoft cloud to
+                        any device.
+                    </p>
+                    <div class="pagination space-x-14">
+                        <button class="text-[#0067b8] font-bold my-3 hover:underline">
+                            Get it today <i
+                                class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card mt-11 lg:w-72 cursor-pointer">
+                    <img src="/assets/Content-Card-Windows-11-Business.d77d48b9.jpeg" alt="" />
+                    <h2 class="text-xl my-4 font-medium">
+                        Windows 11 for business is here
+                    </h2>
+                    <p>
+                        Designed for hybrid work. Powerful for employees. Consistent for IT.
+                        Secure for all.
+                    </p>
+                    <div class="pagination space-x-14">
+                        <button class="text-[#0067b8] font-bold my-3 hover:underline">Learn more <i
+                                class="fa-solid fa-angle-right hover:translate-x-1 transition-all cursor-pointer"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-6 mx-3 lg:px-12 my-6 text-xl md:flex justify-between">
+            <div>
+
+                <span class="mr-4 font-normal">Follow Microsoft</span>
+                <span class="mr-4"><i class="fa-brands fa-facebook-f text-2xl"></i></span>
+                <span class="mr-4"><i class="fa-brands fa-twitter text-2xl"></i></span>
+                <span class="mr-4"><i class="fa-brands fa-youtube text-2xl"></i></span>
+            </div>
+            <div class="bg-[#d9d9d9] hover:border md:w-44 my-3 text-center py-2 hover:bg-white text-black">
+                <a href="/#top" class="text-xl space-x-3">
+                    <i class="fa-solid fa-arrow-up text-[#a19d9d]"></i>
+                    <span class="font-medium">Back to top</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#f2f2f2] px-3 py-6">
+        <div class=" sm:grid sm:grid-cols-3 lg:grid-cols-6 lg:text-xs lg:mx-9">
+            <div class="card-1 lg:mt-14">
+                <div class="text-xl font-medium my-2">What's new</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Microsoft 365</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Surface Pro X</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Surface Pro 7</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Surface Laptop 3</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Windows 11 apps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-2 my-14">
+                <div class="text-xl font-medium my-2 text-[#616161]">Microsoft Store</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Account profile</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Download Center</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Store Support</a>
+                    </li>
+                    <li>
+                        <a href="">Returns</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Order tracking</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-3 my-14 text-[#616161]">
+                <div class="text-xl font-medium my-2">Education</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Microsoft in education</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Devices for education</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Teams for Education</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft 365 Education</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Office Education</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Educator training and development</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Deals for students and parents</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Azure for students</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-4 my-14">
+                <div class="text-xl font-medium my-2 text-[#616161]">Business</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Microsoft Cloud</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Security</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Azure</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Dynamics 365</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft 365</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Advertising</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Industry</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Teams</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-5 my-14">
+                <div class="text-xl font-medium my-2 text-[#616161]">Developers & IT</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Developer Center</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Documentation</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Learn</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Tech Community</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Azure Marketplace</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">AppSource</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Microsoft Power Platform</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Visual Studio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-6 my-14">
+                <div class="text-xl font-medium my-2 text-[#616161]">Company</div>
+                <ul class="space-y-4 text-[#616161]">
+                    <li class="hover:underline">
+                        <a href="">Careers</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">About Microsoft</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Company news</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Privacy at Microsoft</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Investors</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Security</a>
+                    </li>
+                    <li class="hover:underline">
+                        <a href="">Sustainability</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lg:flex lg:justify-between text-[#616161] text-xs">
+            <span class="cursor-pointer">English (India)</span>
+            <div class="text-[#616161]">
+                <!-- <ul class="flex list-none space-x-3"> -->
+                <span cursor-pointer></span>
+                <span class="mr-4 cursor-pointer">Contact Microsoft</span>
+                <span class="mr-4 cursor-pointer">Privacy</span>
+                <span class="mr-4 cursor-pointer">Terms of use</span>
+                <span class="mr-4 cursor-pointer">Trademarks</span>
+                <span class="mr-4 cursor-pointer">About our ads</span>
+                <span class="mr-4 cursor-pointer">&copy; Microsoft 2022</span>
+                <!-- </ul> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
